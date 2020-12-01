@@ -1,21 +1,23 @@
 {
-  "name": "p-api",
+  "name": "pg-test-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "NODE_ENV=production forever start index.js"
+    "start": "NODE_ENV=production forever start index.js",
+    "migrate": "node-pg.migrate"
   },
   "keywords": [],
-  "author": "",
+  "author": "ambrecht.de",
   "license": "ISC",
   "dependencies": {
-    "forever": "3.0.0",
     "cookie-session": "^1.4.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
+    "forever": "3.0.0",
+    "node-pg-migrate": "^5.9.0",
     "pg": "^8.3.0",
     "sqlstring": "^2.3.2",
     "uuid": "^8.2.0"
